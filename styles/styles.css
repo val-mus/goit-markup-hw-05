@@ -529,9 +529,9 @@ address {
 }
 .card-thumb {
     position: relative; 
-    /* overflow: hidden; */
+    overflow: hidden;
     width: 370px;
-    height: 294px; 
+    
  
     
 }
