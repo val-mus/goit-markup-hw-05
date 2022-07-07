@@ -44,14 +44,9 @@ address {
     margin: 0;
 }
 .link {
-    text-decoration: none;
-
-    transition: color 250ms var(--transaction-time);
-
+    text-decoration: none; 
 }
-.link:hover, .link:focus, .contact:hover, .contact:focus{
-    color: var(--focus-color);
-}
+
 
 .logo{
     font-family: 'Raleway', sans-serif;
@@ -68,7 +63,15 @@ address {
     letter-spacing: 0.02em;
     color: inherit;
     padding: 32px 0;
+
+    transition: color 250ms var(--transaction-time);
 }
+.contact:hover,
+.contact:focus {
+    color: var(--focus-color);
+}
+
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -130,7 +133,13 @@ address {
     font-weight: 500;
     letter-spacing: 0.02em;
     color: var(--secondary-txt-color);
+
+    transition: color 250ms var(--transaction-time);
 }
+.header-nav:hover, .header-nav:focus {
+    color: var(--focus-color);
+}
+
 .current.header-nav::after {
     content: "";
     display: block;
@@ -254,8 +263,8 @@ address {
     left: 50%;
 
   
-    min-width: 528px;
-    min-height: 581px;
+    width: 528px;
+    height: 581px;
 
     background: var(--prime-bg-color);
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -336,17 +345,19 @@ address {
 .work-desc{
     position: absolute;
     bottom: 0px;
-    display: block;
-    padding-top: 27px;
-    padding-bottom: 27px;
-    width: 370px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    
+    width: 100%;
     height: 70px;
 
     background-image: linear-gradient(rgba(47, 48, 58, 0.8),rgba(47, 48, 58, 0.8));
     
     font-weight: 700;
     text-transform: uppercase;
-    text-align: center;
+ 
     color: var(--prime-bg-color);
 
 }
@@ -503,7 +514,13 @@ address {
     line-height: 1.71;
     color: var(--prime-bg-color);
 
+    transition: color 250ms var(--transaction-time)
+
 }
+.footer-address:hover, .footer-address:focus{
+    color: var(--focus-color);
+}
+
 .footer-contact{
   
     letter-spacing: 0.02em;
@@ -622,8 +639,8 @@ address {
     line-height: 1.56;
      color:var(--prime-bg-color);
 }
-.complete-card:hover .card-overlay,
-.complete-card:focus .card-overlay  {
+.card-block:hover .card-overlay,
+.card-block:focus .card-overlay  {
     transform: translateY(0);
 }
 
